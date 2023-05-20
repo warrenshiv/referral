@@ -38,6 +38,11 @@
                         <i class="bi bi-circle"></i><span>Add patient</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('triages.addTriage') }}">
+                        <i class="bi bi-circle"></i><span>Triage Form</span>
+                    </a>
+                </li>
             </ul>
         </li><!-- End Tables Nav -->
 

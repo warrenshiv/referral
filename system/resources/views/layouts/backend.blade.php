@@ -55,6 +55,7 @@
     @include('includes.header')
     @include('includes.sidebar')
         @yield('content')
+        @yield('form')
     @include('includes.footer')
 
 </body>

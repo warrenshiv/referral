@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\TriageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/patients',[PatientController::class,'addPatient'])->name('patients.addPatient');
     Route::post('/store-user', [PatientController::class, 'addData'])->name('patients.storeData');
+
+    Route::get('/triages', [TriageController::class, 'addTriage'])->name('triages.addTriage');
+    Route::post('/store-form', [TriageController::class, 'store'])->name('triages.store-form');
 });
 
 
